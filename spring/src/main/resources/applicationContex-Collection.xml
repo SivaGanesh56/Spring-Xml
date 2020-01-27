@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean id="collection" class="com.phenom.org.collection.Collection">
+		<property name="myList">
+			<list>
+				<value> value 1</value>
+				<value>value 2</value>
+			</list>
+		</property>
+		
+		<property name="mySet">
+			<set>
+				<value>1</value>
+				<value>2</value>
+				<value>1</value>
+			</set>
+		</property>
+		<property name="myMap">
+			<map>
+				<entry key="name1" value="value1"/>
+				<entry key="name1" value="value1"/>
+				<entry key="name1" value="value1"/>	
+			</map>
+		
+		</property>
+		
+		<property name="myPlayers">
+			<list>
+				<ref bean="player1"  />
+				<ref bean="player2"  />
+				<ref bean="player3"  />
+			</list>
+		</property>
+		
+		
+		<property name="properties">
+			<props>
+			<prop key="Username">Siva123</prop>
+			<prop key="Password">****</prop>
+			<prop key="dbConnectionURL">https://sivaganesh.com</prop>
+			</props>
+		</property>
+		
+		
+		
+	</bean>
+	
+	<bean id ="player1" class="com.phenom.org.collection.players">
+	<property name="name" value="player1"></property>
+	</bean>
+	
+	<bean id ="player2" class="com.phenom.org.collection.players">
+	<property name="name" value="player2"></property>
+	</bean>
+		
+	<bean id ="player3" class="com.phenom.org.collection.players">
+	<property name="name" value="player3"></property>
+	</bean>
+	
+	
+	
+	
+
+</beans>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	
+	
+	<bean id="person" class="com.phenom.org.byConstrutor.Person"  autowire="constructor" >
+	<constructor-arg name="name" value="Siva"/>
+	<constructor-arg name="age" value="20"/>
+	</bean>
+	
+	
+	
+	<bean id="address1" class="com.phenom.org.byConstrutor.Address" >
+	<constructor-arg name="area"  value="Hyd"/>
+	<constructor-arg name="pin"  value="131"/>
+	</bean>
+
+</beans>

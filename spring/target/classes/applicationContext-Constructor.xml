@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+
+	<bean id="Person" class="com.phenom.org.xml.Person">
+	<constructor-arg name="id" value="131"/>
+	<constructor-arg name="firstname" value="Siva"/>
+	<constructor-arg name="lastname" value="Ganesh"/>
+	</bean>
+
+
+</beans>

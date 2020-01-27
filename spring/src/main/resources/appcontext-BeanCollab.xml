@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+
+	<bean id="Person" class="com.phenom.org.bean.collab.Person">
+	<constructor-arg name="id" value="131"/>
+	<constructor-arg name="name" value="Siva Ganesh"/>
+	<constructor-arg name="address" ref="Address"/>
+	</bean>
+	
+	
+	<bean id="Address"  class="com.phenom.org.bean.collab.Address">
+	<property name="pin"  value="534342"/>
+	<property name="street"  value="ramalayam"/>
+	<property name="town"  value="SMP"/>
+	</bean>
+
+</beans>
